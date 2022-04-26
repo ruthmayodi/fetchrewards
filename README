@@ -1,0 +1,19 @@
+### Fetch Rewards
+
+### Objectives
+
+    - Fetch rewards is a web service that accepts HTTP requests and returns responses based on the conditions described in the next section.
+
+### Background
+
+    ### Fetch rewards users have points in their accounts. Users only see a single balance in their accounts. But for reporting purposes we track their points
+    per payer/partner. In the system each transaction record contains: Payer(string), Point(integer), Timestamp(date). When a user spends points, they don't know or care which payer the points come from, But the accounting team does care how the points are spent. So for this web service two condtions need to be met:
+        - The oldest points need to be spent first( by transaction timestamp not order received)
+        - No payer points should go negative.
+
+### Prerequisites
+
+    - Python(3.6,3.7,3.8,3.9,3.10)
+    - Django (2.2, 3.0, 3.1, 3.2, 4.0)
+
+# How the Application works
