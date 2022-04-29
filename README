@@ -17,3 +17,8 @@
     - Django (2.2, 3.0, 3.1, 3.2, 4.0)
 
 # How the Application works
+
+    ### This application has three routes/ endpoints:
+        1. The points Serializer where we are able to post the transaction. i.s the payer, current points and crrent time
+        2. The points view set, where we are able to post the number of points currently being spent.
+        3. The total pont view sets, which denotes the total number of points the payer has after previous transations.
